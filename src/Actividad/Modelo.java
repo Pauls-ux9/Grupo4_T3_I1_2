@@ -22,7 +22,7 @@ public class Modelo {
     }
 
     
-    public int getMayor() {
+    public int getMayor(int numero) {
         int mayor = vector[0];  
         for (int i = 1; i < vector.length; i++) {
             if (vector[i] > mayor) {
