@@ -36,8 +36,8 @@ public class Vista1 extends javax.swing.JFrame {
         Vista7 = new javax.swing.JMenuItem();
         Salir = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        Vista2 = new javax.swing.JMenuItem();
         Vista3 = new javax.swing.JMenuItem();
+        Vista2 = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -79,6 +79,9 @@ public class Vista1 extends javax.swing.JFrame {
 
         jMenu3.setText("Ayuda");
 
+        Vista3.setText("Instructivo");
+        jMenu3.add(Vista3);
+
         Vista2.setText("Acerca de:");
         Vista2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,9 +89,6 @@ public class Vista1 extends javax.swing.JFrame {
             }
         });
         jMenu3.add(Vista2);
-
-        Vista3.setText("Instructivo");
-        jMenu3.add(Vista3);
 
         jMenuBar1.add(jMenu3);
 
