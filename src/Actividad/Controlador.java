@@ -26,8 +26,6 @@ public class Controlador {
         vistaPrincipal.Vista6.addActionListener(e -> 
             mostrarDialogo(new Vista6((Frame)vistaPrincipal, true)));
         
-        vistaPrincipal.Vista7.addActionListener(e -> 
-            mostrarDialogo(new Vista7((Frame)vistaPrincipal, true)));
     }
     
     private void mostrarVista(JFrame vista) {
