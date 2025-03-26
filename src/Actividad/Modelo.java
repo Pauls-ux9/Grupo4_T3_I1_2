@@ -4,10 +4,42 @@
  */
 package Actividad;
 
-/**
- *
- * @author Jhostin
- */
+import java.util.Arrays;
+
 public class Modelo {
+   private int[] vector; 
+
     
-}
+    public Modelo(int tamaño) {
+        vector = new int[tamaño];  
+    }
+
+    
+    public void setDato(int indice, int valor) {
+        if (indice >= 0 && indice < vector.length) {
+            vector[indice] = valor;  
+        }
+    }
+
+    
+    public int getMayor() {
+        int mayor = vector[0];  
+        for (int i = 1; i < vector.length; i++) {
+            if (vector[i] > mayor) {
+                mayor = vector[i];  
+            }
+        }
+        return mayor;
+    }
+
+    
+    public String[] getDatos() {
+        String[] datos = new String[vector.length];
+
+        for (int i = 0; i < vector.length; i++) {
+            datos[i] = String.valueOf(vector[i]);  
+        }
+        return datos;
+    }
+    
+}  
