@@ -4,10 +4,33 @@
  */
 package Actividad;
 
-/**
- *
- * @author Jhostin
- */
+import java.util.Arrays;
+
 public class Modelo {
+   private int[] vector;
+
     
+    public Modelo(int tamaño) {
+        vector = new int[tamaño];
+    }
+
+    
+    public void setDato(int indice, int valor) {
+        if (indice >= 0 && indice < vector.length) {
+            vector[indice] = valor;
+        }
+    }
+
+    
+    public int getMayor() {
+        return Arrays.stream(vector).max().orElse(Integer.MIN_VALUE);
+    }
+
+    
+    public String[] getDatos() {
+        return Arrays.stream(vector).mapToObj(String::valueOf).toArray(String[]::new);
+    }
 }
+    
+   
+
