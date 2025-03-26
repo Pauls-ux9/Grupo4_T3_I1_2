@@ -13,7 +13,6 @@ public class Modelo {
     public Modelo(int tamaño) {
         vector = new int[tamaño];  
     }
-
     
     public void setDato(int indice, int valor) {
         if (indice >= 0 && indice < vector.length) {

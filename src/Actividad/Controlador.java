@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.Frame;
 
 public class Controlador {
+    private Modelo modelo;
     private Vista1 vistaPrincipal;
     
     public Controlador(Vista1 vista) {
@@ -21,6 +22,7 @@ public class Controlador {
         vistaPrincipal.Vista3.addActionListener(e -> mostrarVista(new Vista3()));
         vistaPrincipal.Vista4.addActionListener(e -> mostrarVista(new Vista4()));
         vistaPrincipal.Vista5.addActionListener(e -> mostrarVista(new Vista5()));
+        
         
         // Vistas modales (AcercaDe, Instructivo, etc.)
         vistaPrincipal.Vista6.addActionListener(e -> 
@@ -47,6 +49,7 @@ public class Controlador {
             System.exit(0);
         }
     }
+    
     
     
 }
