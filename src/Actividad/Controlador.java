@@ -11,7 +11,7 @@ public class Controlador {
         this.vistaPrincipal = vista;
         configurarListeners();
     }
-    
+    //comentario x
     private void configurarListeners() {
         // Botón Salir
         vistaPrincipal.Salir.addActionListener(e -> salirAplicacion());
